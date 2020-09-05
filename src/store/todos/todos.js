@@ -42,6 +42,6 @@ export const reselect_getIncompleteTodos = createSelector(
   (todos) => todos.filter((todo) => !todo.complete)
 );
 // => param đầu tiên nhận 1 callback mà output của nó sẽ là input của callback ở param 2
-// và nếu kết quả của input không đổi thì leengj thực thi trong callback 2 sẽ không đc thực thi
+// và nếu kết quả của input không đổi thì lệnh thực thi trong callback 2 sẽ không đc thực thi ( ko lm filter )
 // => trong trường hợp này thì nếu list của todos không đổi
 // (input cho callback 2) thì sẽ không thực thi filter cho mảng mới => vẫn mảng kết quả của input cũ

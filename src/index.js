@@ -9,7 +9,7 @@ const store = configureStore();
 
 // xem giải thích chung vs giải thích và code của reselect ở todos.js
 
-// sử dụng selector bình thường thì hàm filter luôn trả về mảng mới dùng state của store không đổi
+// sử dụng selector bình thường thì hàm filter luôn trả về mảng mới dù state của store không đổi
 const todos1 = getIncompleteTodos(store.getState());
 const todos2 = getIncompleteTodos(store.getState());
 console.log(todos1 === todos2); // => false vì 2 mảng trả về khác nhau

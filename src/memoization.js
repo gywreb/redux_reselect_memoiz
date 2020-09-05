@@ -2,7 +2,7 @@
 const add = (a, b) => {
   // tạo cache cho hàm add
   if (!add.cache) {
-    add.cache = [];
+    add.cache = {};
   }
 
   //   tạo cặp input để kiểm tra xem đã từng nhập vào chưa (vs 1 cặp đảo)
